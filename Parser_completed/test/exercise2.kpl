@@ -1,0 +1,19 @@
+PROGRAM Exercise2;
+TYPE arr = ARRAY (.2.) OF INTEGER;
+VAR count : INTEGER;
+BEGIN
+	count := 0;
+	FOR i:=0 TO 2 DO arr(.i.) := READI;
+	FOR i := 0 TO 2 DO
+	BEGIN
+		IF arr(.i.) > 20 THEN
+			IF arr(.i.) < 100 THEN count := count + 1
+	END
+	CALL WRITEI(count);
+END.
+		
+		
+	
+	
+	
+	
